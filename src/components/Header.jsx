@@ -36,9 +36,8 @@ const Header = () => {
                 <IconField className='pi pi-search  text-gray-500' id="icon" name="icon">
                     <InputText className='border-2 border-gray-300 rounded-md p-2' id="pesquisa" name="pesquisa" placeholder='pesquisar produtos' />
                 </IconField>
-                <i className='box box-menu'></i>
-
-                <Menubar className='bg-white border-0 shadow-md' model={items}/>
+                
+                <Menubar model={items}/>
             
         </header>
     )
