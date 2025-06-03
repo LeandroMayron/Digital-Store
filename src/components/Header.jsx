@@ -5,6 +5,7 @@ import {InputText} from 'primereact/inputtext';
 import {Menubar} from 'primereact/menubar';
 
 
+
 const Header = () => {
     const items = [
         {
@@ -30,8 +31,9 @@ const Header = () => {
     ];
 
     return (
-        <header>
+        <header className='flex justify-around items-center'>
             <img src={logoHedeader} alt="Digital Store" />
+
 
                 <IconField className='pi pi-search  text-gray-500' id="icon" name="icon">
                     <InputText className='border-2 border-gray-300 rounded-md p-2' id="pesquisa" name="pesquisa" placeholder='pesquisar produtos' />
