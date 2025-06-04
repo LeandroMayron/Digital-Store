@@ -3,31 +3,17 @@ import 'primeicons/primeicons.css'
 import {IconField} from 'primereact/iconfield';
 import {InputText} from 'primereact/inputtext';
 import {Button} from 'primereact/button';
-import {Menubar} from 'primereact/menubar';
+import NavBar from './NavBar';
 
 
 
 
 
 const Header = () => {
-    const items = [
-        {
-            label: 'Home',
-        },
-        {
-            label: 'Produtos',
-        },
-        {
-            label: 'Categorias'
-        },
-        {
-            label: 'Meus Pedidos'
-        }
-    ];
 
     return (
-        <header className='w-full bg-light-gray'>
-            <div className='w-7xl h-20 m-auto flex justify-evenly items-center bg-sucess'>
+        <header className='w-full'>
+            <div className='w-7xl h-20 m-auto flex justify-evenly items-center'>
                 <img src={logoHedeader} alt="Digital Store" />
                     <IconField>
                         <InputText className='w-xs h-12 bg-light-gray-3 rounded-l-md p-2' id="pesquisa" name="pesquisa" placeholder='pesquisar produtos' />
@@ -39,9 +25,7 @@ const Header = () => {
                 <Button className='w-30 h-10 bg-primary rounded text-light-gray-3 font-bold' label='Entrar'/>
                 <i className='pi pi-shopping-cart text-xl text-primary cursor-pointer size' label='Carrinho'></i>
             </div>
-            <div className='w-7xl h-20 m-auto flex bg-success card'>
-                <Menubar className='bg-secondary w-lg' model={items}/>
-            </div>
+            <NavBar />
         </header>
     )
 }
