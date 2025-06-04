@@ -16,7 +16,7 @@ const Header = () => {
             <div className='w-7xl h-20 m-auto flex justify-evenly items-center'>
                 <img src={logoHedeader} alt="Digital Store" />
                     <IconField>
-                        <InputText className='w-xs h-12 bg-light-gray-3 rounded-l-md p-2' id="pesquisa" name="pesquisa" placeholder='pesquisar produtos' />
+                        <InputText className='w-xs h-12 bg-light-gray-3 rounded-l-md p-2 focus:outline-none focus:ring-0 focus:border-none' id="pesquisa" name="pesquisa" placeholder='pesquisar produtos' />
                         <button className='w-12 h-12 mt-2 mb-2 bg-light-gray-3  rounded-r-md'>
                             <i className='pi pi-search text-dark-gray-2 '></i>
                         </button>
