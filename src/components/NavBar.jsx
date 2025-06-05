@@ -1,4 +1,7 @@
+
+
 const NavBar = () => {
+  
   return (
     <nav className="w-7xl m-auto md:invisible lg:visible xl:visible 2xl:visible">
       <ul className="flex w-md p-4 mx-10 justify-around items-center">
